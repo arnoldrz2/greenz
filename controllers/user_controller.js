@@ -18,9 +18,9 @@ router.get("/", function(req, res) {
 
 router.post("/users", function(req, res) {
     user.create([
-        "username"
+        "user_name"
     ],[
-        req.body.username
+        req.body.user_name
     ], function(data) {
         res.redirect("/");
     });

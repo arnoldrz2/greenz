@@ -4,15 +4,9 @@ USE greenz_db;
 CREATE TABLE users
 (
 	id INT NOT NULL AUTO_INCREMENT,
-	username VARCHAR(255) NOT NULL,
-	favorite_strain VARCHAR(255),
-	PRIMARY KEY (id)
-);
-
-CREATE TABLE top_strains
-(
-	id INT NOT NULL AUTO_INCREMENT,
-	strain VARCHAR(255) NOT NULL,
-	score INT(10),
+	user_name VARCHAR(255) NOT NULL,
+	user_email VARCHAR(255),
+	user_birth DATE,
+	user_favorite_strain VARCHAR(255),
 	PRIMARY KEY (id)
 );
