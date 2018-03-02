@@ -19,10 +19,6 @@ router.get("/account", function(req, res) {
     res.render("account");
 });
 
-
-
-
-
 // router.get("/", function(req, res) {
 //     user.all(function(data) {
 //         var hbsObject = {
