@@ -28,6 +28,7 @@ var user = {
         });
       }
     };
+    
 
 //Export the database functions
 module.exports = user;
