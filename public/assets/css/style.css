@@ -1,6 +1,5 @@
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  text-shadow: 2px 4px 10px #90EE90;
 }
 #background-image1 {
  position: absolute;
@@ -12,3 +11,36 @@ h1 {
  background-image: url('../images/project2-greenz.jpg');
  filter: blur(2px);
 }
+
+  * {margin: 0; padding: 0;}
+
+  div {
+    margin: 20px;
+  }
+
+  ul {
+    list-style-type: upper-roman;
+  }
+
+  h4 {
+    font-family: 'Josefin Sans', sans-serif;;
+  }
+
+  li img {
+    float: left;
+    margin: 0 15px 0 0;
+  }
+
+  li p {
+    font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  }
+
+  li {
+    padding: 10px;
+    overflow: auto;
+  }
+
+  li:hover {
+    background: #eee;
+    cursor: pointer;
+  }
