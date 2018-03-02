@@ -1,6 +1,10 @@
 h1 {
+<<<<<<< HEAD
   font-family: 'Lato', sans-serif;
   /* text-shadow: 2px 4px 10px #90EE90; */
+=======
+  font-family: 'Josefin Sans', sans-serif;
+>>>>>>> 3398cd854d11f40432b53015f6281b4bfce4bec0
 }
 #background-image1 {
  position: absolute;
@@ -11,4 +15,42 @@ h1 {
  background-position: center center;
  background-image: url('../images/Marijuana.jpg');
  filter: blur(2px);
+}
+
+/* topten */
+  * {margin: 0; padding: 0;}
+
+  div {
+    margin: 20px;
+  }
+
+  ul {
+    list-style-type: upper-roman;
+  }
+
+  h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  li img {
+    float: left;
+    margin: 0 15px 0 0;
+  }
+
+  li p {
+    font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  }
+
+  li {
+    padding: 10px;
+    overflow: auto;
+  }
+
+  li:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+
+.nav-wrapper {
+  font-family: 'Rubik', sans-serif
 }
