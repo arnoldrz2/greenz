@@ -28,10 +28,10 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-// var routes = require("./controllers/*.js"); this is commented out because controller hasn't been setup yet
+var routes = require("./controllers/greenzcontroller.js");
 
-// app.use(routes); this is commmented out because routes haven't been setup yet
+app.use(routes);
 
 app.listen(PORT, function(){
-    console.log("I am on port " + PORT);
+    console.log("Listening to port:" + PORT);
 });
