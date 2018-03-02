@@ -5,16 +5,33 @@ var router = express.Router();
 // Import the model (user.js) to use its database functions.
 var user = require("../models/user.js");
 
-// Create the routes and associated login
+// Create the routes
 router.get("/", function(req, res) {
-    user.all(function(data) {
-        var hbsObject = {
-            users: data
-        };
-        console.log(hbsObject);
-        res.render("index", hbsObject);
-    });
+    res.render("index");
 });
+router.get("/strains", function(req, res) {
+    res.render("strains");
+});
+router.get("/topten", function(req, res) {
+    res.render("topten");
+});
+router.get("/account", function(req, res) {
+    res.render("account");
+});
+
+
+
+
+
+// router.get("/", function(req, res) {
+//     user.all(function(data) {
+//         var hbsObject = {
+//             users: data
+//         };
+//         console.log(hbsObject);
+//         res.render("index", hbsObject);
+//     });
+// });
 
 router.post("/users", function(req, res) {
     user.create([
