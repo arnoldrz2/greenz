@@ -31,11 +31,13 @@ router.get("/account", function(req, res) {
 
 router.post("/users", function(req, res) {
     user.create([
-        "user_name"
+        "user_name",
+        "user_email"
     ],[
-        req.body.user_name
+        req.body.user_name,
+        req.body.user_email
     ], function(data) {
-        res.redirect("/");
+        res.render("account");
     });
 });
 
