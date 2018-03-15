@@ -1,6 +1,6 @@
 var orm = require('../config/orm.js');
 
-//Create Burger Object
+//Create User Object
 var user = {
     //Select all burger table entries
     all: function(cb) {
